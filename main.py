@@ -1,0 +1,40 @@
+import sys
+choice = 1
+while 1 <= choice <= 3:
+    print("")
+    print("")
+    print("------------------------------")
+    print("------PASSWORD MANAGER--------")
+    print("------------------------------")
+    print("----------1. START------------")
+    print("----------2. HELP-------------")
+    print("----------3. Exit-------------")
+    print("------------------------------")
+    choice = int(input("SELECT OPTION : "))
+    if choice == 1:
+        title = input("Enter The Name of The Platform : ")
+        email = input("What Email did you used There : ")
+        username = input("What Username did you used There : ")
+        password = input("What was the password : ")
+        if __name__ == "__main__":
+            file = open(title + ".txt", 'a')
+            file.write("Platform : " + title + " \n")
+            file.write("Email : " + email + " \n")
+            file.write("Username : " + username + " \n")
+            file.write("Password : " + password + " \n")
+            file.write("\n")
+            file.close()
+        print("Account Details Have Been Saved.")
+    elif choice == 2:
+        print("")
+        print("")
+        print("------------------------------")
+        print("-------------HELP-------------")
+        print("------------------------------")
+        print("Welcome to Password Manager. This App will help you manage your account Passwords")
+        print("Good Luck")
+        print("------------------------------")
+        print("-------------HELP-------------")
+        print("------------------------------")
+    elif choice == 3:
+        sys.exit()
